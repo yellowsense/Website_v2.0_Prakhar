@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Slots Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="timeSlotsForm">
+
+
+        <div class="search-bar">
+            <label for="societySearch">Search Society:</label>
+            <input type="text" id="societySearch" placeholder="Type to search...">
+            <div id="suggestionContainer"></div>
+            <div id="selectedSuggestions"></div>
+        </div>
+
+
+        <div class="time-selection">
+            <div class="time-slot" id="slot1">
+                <label for="startTime1">Slot 1 - Start Time:</label>
+                <input type="time" id="startTime1" name="startTime1" required>
+
+                <label for="endTime1">End Time:</label>
+                <input type="time" id="endTime1" name="endTime1" required>
+
+                <span class="remove-slot" onclick="removeSlot('slot1')">Remove</span>
+            </div>
+        </div>
+        <div class="time-selection">
+            <div id="slotContainer"></div>
+        </div>
+
+        <div class="time-selection">
+            <button type="button" onclick="addSlot()">+ Add Slot</button>
+        </div>
+        <div class="form-section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-section">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+        </div>
+        
+        <div class="form-section">
+    <label for="aadhar">Aadhar Number:</label>
+    <input type="text" id="aadhar" name="aadhar" required>
+</div>
+        
+        
+
+        <div class="form-section">
+            <label>Gender:</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        
+
+        <div class="form-section">
+            <label>Services:</label>
+            <div class="services-options">
+                <input type="checkbox" id="maid" name="services" value="maid">
+                <label for="maid">Maid</label>
+
+                <input type="checkbox" id="nanny" name="services" value="nanny">
+                <label for="nanny">Nanny</label>
+
+                <input type="checkbox" id="cook" name="services" value="cook">
+                <label for="cook">Cook</label>
+            </div>
+        </div>
+        
+
+        
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+/* .time-slot {
+    margin-bottom: 10px;
+} */
+
+.remove-slot {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+.time-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.society-suggestion {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-top: 2px;
+    background-color: #fff;
+}
+
+.society-suggestion:hover {
+    background-color: #f0f0f0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
